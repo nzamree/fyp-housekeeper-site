@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · FYP Diary Housekeeper</title>
+  <meta name="description" content="How the FYP Diary Housekeeper bot handles data.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Privacy policy</h1>
+    <p class="updated">Last updated 19 November 2026</p>
+
+    <p>FYP Diary Housekeeper ("the bot") is a private Telegram bot used only by the members of one
+      final-year-project group. This page explains what it handles and where that data goes.</p>
+
+    <h2>What the bot collects</h2>
+    <ul>
+      <li>Messages that members send to the bot or tag it in: links, notes and written reflections.</li>
+      <li>Videos (vlogs) that members send to the bot.</li>
+      <li>Each member's Telegram user ID and handle, so the bot knows who sent what.</li>
+      <li>The date and time of each entry.</li>
+    </ul>
+    <p>With Telegram's privacy mode on, the bot does not see group messages that do not mention it.</p>
+
+    <h2>Google user data</h2>
+    <p>The bot uses Google Drive, Google Docs and Google Sheets with the group owner's own Google account,
+      only to create folders, upload the group's files, and write an index spreadsheet and journal
+      documents in the group's Drive folder. It does not read or change other files, and it does not access
+      any other person's Google account.</p>
+    <p>The bot's use of information received from Google APIs adheres to the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User
+      Data Policy</a>, including the Limited Use requirements. Google user data is not used for
+      advertising, is not sold, and is not transferred to anyone except as described on this page.</p>
+
+    <h2>How data is processed</h2>
+    <ul>
+      <li>Files are stored in the group's own Google Drive folder.</li>
+      <li>Vlogs are transcribed into text on the bot's own server with an open-source speech-to-text model;
+        the audio is not sent to any outside service.</li>
+      <li>Once every two weeks, that period's transcripts, notes and link titles are sent to an AI model
+        through OpenRouter to write a short summary for the group. This is done with zero data retention, so
+        the AI provider does not keep the material.</li>
+      <li>The server keeps temporary copies of videos only until they are filed, and a small database of
+        entries that is backed up to the same Drive folder.</li>
+    </ul>
+
+    <h2>Sharing</h2>
+    <p>The data is visible only to the group members and their project supervisor through the group's
+      Drive folder and Telegram chat. It is not sold, rented or shared with anyone else.</p>
+
+    <h2>Removing data</h2>
+    <p>Members can undo their own last entry within 15 minutes using the bot's <code>/undo</code> command.
+      Any member can ask the group owner to delete their entries or files at any time.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: contact the maintainer through GitHub,
+      <a href="https://github.com/nzamree">@nzamree</a>.</p>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms of service</a>
+    </nav>
+  </main>
+</body>
+</html>
