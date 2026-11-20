@@ -40,6 +40,9 @@
       <li>Files are stored in the group's own Google Drive folder.</li>
       <li>Vlogs are transcribed into text on the bot's own server with an open-source speech-to-text model;
         the audio is not sent to any outside service.</li>
+      <li>When a member sends the bot text that isn't clearly marked as a reflection, the text is sent to a small
+        AI model through OpenRouter, with zero data retention, only to decide whether it is a reflection worth
+        saving. Very short messages are skipped without this check.</li>
       <li>Once every two weeks, that period's transcripts, notes and link titles are sent to an AI model
         through OpenRouter to write a short summary for the group. This is done with zero data retention, so
         the AI provider does not keep the material.</li>
